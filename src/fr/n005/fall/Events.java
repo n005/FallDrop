@@ -14,11 +14,11 @@ import org.bukkit.inventory.ItemStack;
 
 public class Events implements Listener {
 	@EventHandler
-	public void Fall(EntityDamageEvent e) { //Quel est l'événement et comment s'appellera-t-il ? Dans notre cas, il s'appellera e.
+	public void Fall(EntityDamageEvent e) { /
 		if (!(e.getEntity() instanceof Player)) {
 			return;
 		}
-		 Player player = (Player) e.getEntity(); //Créer la variable p.
+		 Player player = (Player) e.getEntity(); 
 		 World world = player.getWorld();
 		 
 		 if (e.getCause() == DamageCause.FALL) {
