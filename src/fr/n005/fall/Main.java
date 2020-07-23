@@ -6,7 +6,7 @@ public class Main extends JavaPlugin {
 
 	@Override
     public void onEnable() {
-        System.out.println("Test de spigot activé");
+        System.out.println("DropFall ok");
         getServer().getPluginManager().registerEvents(new Events(), this);
     }
 
